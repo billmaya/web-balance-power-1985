@@ -1,0 +1,7 @@
+svg {
+    background-color: antiquewhite;
+}
+
+g polygon:hover {
+    fill: #000000;
+}
