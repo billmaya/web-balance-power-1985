@@ -1,3 +1,4 @@
+/* Word Count 2510 */
 
 const map_data = [
     {country:"United States",
