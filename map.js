@@ -1023,3 +1023,7 @@ function createOutline(origin_x, origin_y, direction_string) {
     
     return points;
 }
+
+function main() {
+    drawMap();
+}
