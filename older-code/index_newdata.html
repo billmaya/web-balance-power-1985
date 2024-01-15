@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+<body onLoad="main()">
+    <svg id="map" class="map" xmlns="http://www.w3.org/2000/svg" width="512" height="342" viewBox="0 0 512 342">
+        <g id="usa_main" class="north_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="usa_alaska" class="north_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="canada_main" class="north_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="canada_victoria" class="north_america" xmlns="http://www.w3.org/2000/svg" /> 
+        <g id="mexico_main" class="north_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="guatemala_main" class="central_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="guatemala_mini" class="central_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="el_salvador_main" class="central_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="el_salvador_mini" class="central_america" xmlns="http://www.w3.org/2000/svg" />
+
+        <g id="honduras_main" class="central_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="honduras_mini" class="central_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="nicaragua_main" class="central_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="nicaragua_mini" class="central_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="costa_rica_main" class="central_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="costa_rica_mini" class="central_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="panama_main" class="central_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="panama_mini" class="central_america" xmlns="http://www.w3.org/2000/svg" />
+
+        <g id="cuba_main" class="caribbean" xmlns="http://www.w3.org/2000/svg" />
+
+        <g id="argentina_main" class="south_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="colombia_main" class="south_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="peru_main" class="south_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="venezuela_main" class="south_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="brazil_main" class="south_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="brazil_llha_marajo" class="south_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="chile_main" class="south_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="chile_tierra_fuego" class="south_america" xmlns="http://www.w3.org/2000/svg" />
+        <g id="bolivia_main" class="south_america" xmlns="http://www.w3.org/2000/svg" />
+
+        <g id="soviet_union_main" class="soviet_union" xmlns="http://www.w3.org/2000/svg" />
+
+        <g id="britain_main" class="europe" xmlns="http://www.w3.org/2000/svg" />
+        <g id="britain_ireland" class="europe" xmlns="http://www.w3.org/2000/svg" />
+        <g id="france_main" class="europe" xmlns="http://www.w3.org/2000/svg" />
+        <g id="spain_main" class="europe" xmlns="http://www.w3.org/2000/svg" />
+        <g id="italy_main" class="europe" xmlns="http://www.w3.org/2000/svg" />
+        <g id="west_germany_main" class="europe" xmlns="http://www.w3.org/2000/svg" />
+        <g id="east_germany_main" class="europe" xmlns="http://www.w3.org/2000/svg" />
+        <g id="poland_main" class="europe" xmlns="http://www.w3.org/2000/svg" />
+        <g id="czechoslovakia_main" class="europe" xmlns="http://www.w3.org/2000/svg" />
+        <g id="yugoslavia_main" class="europe" xmlns="http://www.w3.org/2000/svg" />
+        <g id="romania_main" class="europe" xmlns="http://www.w3.org/2000/svg" />
+        <g id="greece_main" class="europe" xmlns="http://www.w3.org/2000/svg" />
+        <g id="sweden_main" class="europe" xmlns="http://www.w3.org/2000/svg" />
+
+        <g id="south_africa_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="egypt_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="tunisia_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="morocco_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="algeria_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="libya_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="mali_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="nigeria_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="sudan_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="ethiopia_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="kenya_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="zaire_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="tanzania_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="mozambique_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="zambia_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="angola_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="mauritania_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="guinea_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="ivory_coast_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="burkina_faso_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="ghana_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="niger_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="chad_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="cameroon_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="central_africa_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="congo_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="zimbabwe_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+        <g id="botswana_main" class="africa" xmlns="http://www.w3.org/2000/svg" />
+
+        <g id="japan_hokkaido" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="japan_main" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="japan_kyushu" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="north_korea_main" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="south_korea_main" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="australia_main" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="china_main" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="taiwan_main" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="vietnam_main" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="pakistan_main" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="india_main" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="burma_main" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="thailand_main" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="indonesia_sumatra" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="indonesia_borneo" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="indonesia_celebes" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="indonesia_new_guinea" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="philippines_luzon" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="philippines_palawan" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="philippines_panay" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="philippines_samar" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+        <g id="philippines_mindaneo" class="asia" xmlns="http://www.w3.org/2000/svg" /-->
+
+        <g id="israel_main" class="middle_east" xmlns="http://www.w3.org/2000/svg" />
+        <g id="israel_mini" class="middle_east" xmlns="http://www.w3.org/2000/svg" />
+        <g id="syria_main" class="middle_east" xmlns="http://www.w3.org/2000/svg" />
+        <g id="turkey_main" class="middle_east" xmlns="http://www.w3.org/2000/svg" />
+        <g id="iraq_main" class="middle_east" xmlns="http://www.w3.org/2000/svg" />
+        <g id="saudi_arabia_main" class="middle_east" xmlns="http://www.w3.org/2000/svg" />
+        <g id="iran_main" class="middle_east" xmlns="http://www.w3.org/2000/svg" />
+        <g id="afghanistan_main" class="middle_east" xmlns="http://www.w3.org/2000/svg" />
+        <g id="jordan_main" class="middle_east" xmlns="http://www.w3.org/2000/svg" />
+        <g id="jordan_mini" class="middle_east" xmlns="http://www.w3.org/2000/svg" />
+        <g id="lebanon_main" class="middle_east" xmlns="http://www.w3.org/2000/svg" />
+        <g id="lebanon_mini" class="middle_east" xmlns="http://www.w3.org/2000/svg" />
+
+        <!--g id="" class="" xmlns="http://www.w3.org/2000/svg" /-->
+
+    </svg>
+    <script type="text/javascript" src="map_newdata.js"></script>
+</body>
+
+</html>
+

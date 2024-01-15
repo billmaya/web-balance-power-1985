@@ -1,0 +1,11 @@
+svg {
+    background-color: antiquewhite;
+}
+
+g polygon:hover {
+    fill: #000000;
+}
+
+g .north_america:hover {
+    fill: #000000; 
+}

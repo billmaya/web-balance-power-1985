@@ -1,0 +1,34 @@
+PROCEDURE TouchDown(ix,iy: integer; VAR FirstPt: Point);	 {used in graphics initialization}
+BEGIN
+	FirstPt.h:=ix+30;	FirstPt.v:=iy+24;
+	MoveTo(FirstPt.h,FirstPt.v);
+END;
+
+PROCEDURE Compass (DirnStrng:Str255);	 {Moves pen around country border}
+
+VAR		 i,j,k,l: INTEGER;
+		 blot:	 char;
+BEGIN
+	FOR i:= 1 TO length(DirnStrng) DO
+		BEGIN
+			k:=ord(DirnStrng[i])-49;
+			l:=i+1;
+			IF (k<1) OR (k>9) THEN BEGIN k:=1; l:=i END;
+			blot:=DirnStrng[l];
+			CASE blot OF
+			'N': Line(0,-k);
+			'S': Line(0,k);
+			'E': Line(k,0);
+			'W': Line(-k,0);
+			END;
+		END;
+END;
+
+TouchDown(30,60,FirstPt);
+Compass('3ES6ES6ES6ES6ES6ES6ES6ES3ESWSWS3EN2ESESESEES5W');
+Compass('SSWSSWWSWSW3SESEENENE3NENENN4ESSWSWSE3SWSSEEN3ENE');
+Compass('NN6E3N9EENENEN3E3SWSSWSWWSWWSWSEES4WS3WSWWSSWSWS');
+Compass('3WNNW5SW3NWSSWSSESSWSWS3WSSWWSSWWSWSWWSWSSW4SE7S');
+Compass('WS3WNWNNENNWNNE4N2WN3WN6WSESSWNWWNWWS3WSWW');
+Compass('S3WSWWSWSW4S2WNWNW4NW3N5W3NWNN5WN2WN2W');
+Compass('N2WN6W4NWNW9NNE3NE2NENE2NE2NENE2NENE2NENENE2NE2NENE2N');

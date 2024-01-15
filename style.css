@@ -1,7 +1,7 @@
-svg {
+/*svg {
     background-color: antiquewhite;
-}
+}*/
 
-g polygon:hover {
-    fill: #000000;
+svg path[id^="country"]:hover {
+    fill: #b3b3b3;
 }
